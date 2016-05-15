@@ -1,2 +1,2 @@
 # Welcome to JavaScript Development
-## Lesson 1: Installfest
+## Lesson 0: Installfest
