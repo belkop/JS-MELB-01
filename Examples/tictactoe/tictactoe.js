@@ -1,33 +1,40 @@
 var prompt = require('prompt');
 
-  prompt.start();
+var turn = 'p1';
+var winner = '';
+var complete = false;
 
-  console.log('what symbol will player 1 use:');
+prompt.start();
 
-  prompt.get(['symbol'], function (err, result) {
-    if (err) { return onErr(err); }
-
-    console.log('Command-line input received:');
-    console.log('  Symbol: ' + result.symbol);
-
+do {
     getMove();
+} while(!complete);
+
+if (winner) {
+    console.log('winner is: ' + winner);
+} else {
+    console.log('there was no winner');
+}
 
 
-  });
-
-  function onErr() {
-      console.log('some error');
-  }
-
-
-  function getMove() {
-
-      prompt.get(['move'], function (err, result) {
+function getMove() {
+    prompt.get(['move'], function (err, result) {
         if (err) { return onErr(err); }
 
         console.log('  Move: ' + result.move);
 
+        checkForWinner();
+        if(!winner) {
+            isGameFinished();
+        }
+    });
+}
 
 
-      });
-  }
+function checkForWinner() {
+
+}
+
+function isGameFinished() {
+    
+}
