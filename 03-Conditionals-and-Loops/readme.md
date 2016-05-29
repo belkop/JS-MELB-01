@@ -70,11 +70,11 @@ When you need to test more than one case, you may use `else if`:
 ```javascript
 var name = "kittens";
 if (name === "puppies") {
-  name += " are are not puppies";
+  name += " are not puppies";
 } else if (name === "kittens") {
   name += " are cute";
 } else {
-  name = "no " + name = " for me";
+  name = "no " + name + " for me";
 }
 
 name === "kittens are cute"
@@ -86,10 +86,10 @@ name === "kittens are cute"
 ```javascript
 var name = "kittens";
 if (name = "puppies") {
-  name += " are are not puppies";
+  name += " are not puppies";
 }
 
-name === "puppies are are not puppies"
+name === "kittens are not puppies"
 //=> true
 ```
 
@@ -388,7 +388,7 @@ var r3 = ['', '', 'x'];
 var winner = '';
 
 //check columns
-for (var 1 = 0; 1 < r1.length, i++) {
+for (var i = 0; i < r1.length, i++) {
     if(r1[i] === r2[i] && r1[i] === r3[i]) {
         winner = r1[i];
     }
