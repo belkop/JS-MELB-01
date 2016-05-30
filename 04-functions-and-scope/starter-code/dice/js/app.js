@@ -17,3 +17,7 @@ code folder to get started.
 3) Check to see if the Roll Dice has been hit, if it has run the diceRoll function.
 
 */
+
+$('#roll-dice').on('click', function() {
+    //... do stuff
+});
