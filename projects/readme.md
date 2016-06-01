@@ -1,6 +1,9 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) JavaScript Unit Projects
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) JavaScript Unit Projects (3:00)
 
-> We have 3 Unit Projects in JS, each building on top of skills learned previously to scaffold your learning over the entire course. Our projects each have an objective, deliverables, and recommendations, and tie in to the overall competencies we focus on in each unit. Dive into the detailed project spec file to read more about each project.
+> We have 3 Unit Projects in JS, each building on top of skills learned previously to scaffold students' learning over the entire course. Our projects each have an objective, deliverables, and recommendations, and tie in to the overall competencies we focus on in each unit. Dive into the detailed project spec file to read more about each project and read about our curriculum.
+
+See the [feedback guidelines](project-feedback.md) to read more about how we provide feedback to students.
+
 
 ### **Project 1: Slackbot**
 
