@@ -112,10 +112,8 @@ Now, we need to push up our bot to Heroku.
 
 `$ heroku create myhubotapp`
 
- **Connect your local repo to heroku**
-
- `$ git remote add heroku https://git.heroku.com/myhubotapp`
-
+At this point Heroku has added itself as a remote repository to our local git repository.
+ 
 **Add the following configs for Slack:**
 
 `$ heroku config:add HEROKU_URL=https://myhubotapp.herokuapp.com`
