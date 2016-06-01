@@ -113,7 +113,7 @@ Now, we need to push up our bot to Heroku.
 `$ heroku create myhubotapp`
 
 At this point Heroku has added itself as a remote repository to our local git repository.
- 
+
 **Add the following configs for Slack:**
 
 `$ heroku config:add HEROKU_URL=https://myhubotapp.herokuapp.com`
@@ -147,9 +147,11 @@ To create instructions for your Hubot, you need to add a JavaScript file to the 
  In the example below, when the bot hears "Hello!", it will respond, "Hi there!":
 
  ```js
- bot.hear(/Hello!/, function(res) {
-   return res.send("Hi there!");
- });
+ module.exports = function(robot) {
+    robot.hear(/Hello!/, function(res) {
+        return res.send("Hi there!");
+    });
+ }
  ```
 
  ```
@@ -162,9 +164,11 @@ To create instructions for your Hubot, you need to add a JavaScript file to the 
  `.respond` is similar to `.hear`, except it will only be triggered when someone specifically mentions the Hubot using `@`, or sends a direct message.
 
  ```javascript
- bot.respond(/What's your favorite food?/, function(res) {
-   return res.send("I'm a robot--I don't eat food!");
- });
+ module.exports = function(robot) {
+     robot.respond(/What's your favorite food?/, function(res) {
+         return res.send("I'm a robot--I don't eat food!");
+     });
+ }
  ```
 
  ```
@@ -185,17 +189,19 @@ The "send" method allows your Hubot to send a message to the channel, and the "r
  Would you like to accept user input in your script? Take a look at the example below:
 
  ```js
- bot.respond(/Hi Hubot! My name is (.*)/i, function(msg) {
-   var name;
-   name = msg.match[1];
-   if (name == "Hubot") ){
-     return msg.send("You're not Hubot--I'm Hubot!");
-   } else {
-     return msg.reply("Nice to meet you, " + name + "!");
-   }
-
- });
+ module.exports = function(robot) {
+     robot.respond(/Hi Hubot! My name is (.*)/i, function(msg) {
+       var name;
+       name = msg.match[1];
+       if (name == "Hubot") ){
+         return msg.send("You're not Hubot--I'm Hubot!");
+       } else {
+         return msg.reply("Nice to meet you, " + name + "!");
+       }
+     });
+ }
  ```
+
  ```
  tim: @hubot Hi Hubot! My name is Tim
  hubot: @tim Nice to meet you, Tim!  
@@ -217,17 +223,19 @@ Now, let's dig into how the user input works. As you can see, we're using `.resp
  Here's an example that uses two wildcards:
 
  ```js
- bot.respond(/add (.*) and (.*)/i, function(msg) {
-   var a;
-   var b;
-   a = parseInt(msg.match[1]);
-   b = parseInt(msg.match[2]);
-   c = a + b
+ module.exports = function(robot) {
+    robot.respond(/add (.*) and (.*)/i, function(msg) {
+       var a;
+       var b;
+       a = parseInt(msg.match[1]);
+       b = parseInt(msg.match[2]);
+       c = a + b
 
-   return msg.reply(a + " plus " + b + " = " + c);
- });
-
+       return msg.reply(a + " plus " + b + " = " + c);
+     });
+}
  ```
+
  ```
  tim: @hubot add 3 and 4
  hubot: 3 plus 4 = 7
@@ -235,25 +243,28 @@ Now, let's dig into how the user input works. As you can see, we're using `.resp
 
  Here's another example that uses a switch statement to handle different cases:
  ```js
- bot.respond(/what is your favorite (.*)/, function(msg) {
-   var fav;
-   fav = msg.match[1];
-   console.log(fav);
-   switch (fav) {
-     case "food":
-       return msg.reply("I'm a robot--I don't eat food!");
-       break;
-     case "band":
-       return msg.reply("It's gotta be Daft Punk!");
-       break;
-     case "programming language":
-       return msg.reply("Javascript, of course!");
-       break;
-     default:
-       return msg.reply("I don't have a favorite " + fav + ". What's yours?");
-   }
- });
+ module.exports = function(robot) {
+    robot.respond(/what is your favorite (.*)/, function(msg) {
+        var fav;
+        fav = msg.match[1];
+        console.log(fav);
+        switch (fav) {
+         case "food":
+           return msg.reply("I'm a robot--I don't eat food!");
+           break;
+         case "band":
+           return msg.reply("It's gotta be Daft Punk!");
+           break;
+         case "programming language":
+           return msg.reply("Javascript, of course!");
+           break;
+         default:
+           return msg.reply("I don't have a favorite " + fav + ". What's yours?");
+        }
+    });
+ }
  ```
+
  ```
  tim: @hubot what is your favorite food?
  hubot: @tim I'm a robot--I don't eat food!
