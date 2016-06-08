@@ -50,11 +50,12 @@ Each of these methods returns one or more elements from the DOM. What can we do 
 ## Working with the DOM: Codealong
 We can manipulate the DOM in 3 different ways:
 
-1.  Inline JavaScript (least desirable).
+1 - Inline JavaScript (least desirable).
 ```html
   <body onload="window.alert('welcome to my app!');">
 ```
-2. Include script tags in our HTML documents. This technique is used primarily when generating content through a back-end language. Try to avoid this if not necessary.
+
+2 - Include script tags in our HTML documents. This technique is used primarily when generating content through a back-end language. Try to avoid this if not necessary.
 ```html
   <html>
     <head>
@@ -66,7 +67,8 @@ We can manipulate the DOM in 3 different ways:
     </body>
   </html>
 ```
-3. Including the JavaScript file [at the footer] of our site/app.
+
+3 - Including the JavaScript file [at the footer] of our site/app.
 
 **It is important to get used to falling in the habit of only doing DOM related manipulation once our content has loaded.** This is required, as we can't manipulate something that has not yet been drawn in the browser. In plain JavaScript, we can usually wrap this in a 'window.onload' function.
 
