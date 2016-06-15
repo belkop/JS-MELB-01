@@ -7,7 +7,7 @@
 | 30 min | [Lab](#lab1) | Appending  |
 | 30 min | [Introduction](#introduction) | Separation of Concerns and Templating |
 | 35 min | [Codealong](#codealong2)  | Templating  |
-| 35 min | [Lab](#lab2) | To Do List: Independent Practice |
+| 35 min | [Codealong](#codealong2) | To Do List |
 | 5 min | [Conclusion](#conclusion) | Final Questions & Exit Tickets |
 
 
@@ -201,7 +201,7 @@ This routine allows us to organize our code by DOM and event logic (usually take
 
 ---
 
-<a name = "lab2"></a>
+<a name = "codealong2"></a>
 ## To Do List: Code along
 
 Build on top of the to-do list app to store your initial to-do data in a JavaScript object and interact with the object whenever the user interacts with the DOM.
