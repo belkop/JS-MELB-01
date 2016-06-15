@@ -16,8 +16,6 @@ Appending: Independent Practice
 
 'use strict';
 
-var $ = require('jquery');
-
 $(function() {
   var yourName = prompt('What is your name?');
 
