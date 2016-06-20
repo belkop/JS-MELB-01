@@ -12,12 +12,11 @@ MyApp.todos = [{
 }];
 
 
-
 $(function() {
 
   var $thingList = $('#fav-list'),
       $button = $('#new-thing-button');
 
-  MyApp.populateList($thingList);
+  //MyApp.populateList($thingList);
 
 });
