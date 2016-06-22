@@ -265,10 +265,6 @@ Callbacks and closures are the bread and butter of asynchronous programming. Loo
 
 Callbacks, closures, and IIFEs allow us to better organize our code for each scenario, as well as make our functions significantly more dynamic.
 
-## Homework
-
-Before the next class, make sure that you sign up for a 500px developer account. **We strongly recommend that you do this before coming to class, as this can free up time during the lesson**. We've created a [set of sign up instructions](500px.md).
-
 **Optional homework:** If you want an additional challenge can try to complete [this series of functional-programming JavaScript exercises](http://reactivex.io/learnrx/). Some of these exercises use methods and syntax that we haven't covered in class and which you will likely need to look up on your own.
 
 #### Further Resources
