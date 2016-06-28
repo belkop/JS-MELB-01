@@ -29,8 +29,11 @@ the provided site architecture.
 
 __Feed sources:__
 
-Give the user the ability to pull from a multiple news sources. Here are two news sources we suggest:
+Give the user the ability to pull from a multiple news sources. Here are some news sources we suggest:
 
+- [Mashable: http://mashable.com/stories.json](http://mashable.com/stories.json)
+- [Reddit: https://www.reddit.com/top.json](https://www.reddit.com/top.json)
+- [Digg: http://digg.com/api/news/popular.json](http://digg.com/api/news/popular.json)
 - [NPR One](http://dev.npr.org/)
 - [Hearst publishing group](http://developer.hearst.com/) (Cosmopolitan, Elle, Popular Mechanics, Road and Track, etc.)
 
@@ -129,20 +132,15 @@ __Additional UI interaction rules:__
 
 ### Getting Started
 
-Begin by "forking" the starter code repository. You can do so by clicking the "Fork" icon on
-the top right of [this](https://github.com/generalassembly-studio/JS-Unit-2-Project-Starter-Code) page. Once
-complete, clone the repository to your computer by running the following
-commands:
-
+Begin by creating a new repo on your github account.
+Clone this repo locally:
 ```
-cd ~/Sites/
-git clone https://github.com/<your-username-here>/feedr.git
-cd feedr
+cd <your project parent folder>
+git clone https://github.com/<your github name>/<your github repo>.git
+cd <your project folder>
 ```
 
-You can then open Sublime Text and point it at the `~/Sites/feedr` directory and
-work on the below steps. As you accomplish a feature, be sure to commit it in
-Git with the following commands:
+As you accomplish a feature, be sure to commit it in Git with the following commands:
 
 ```
 git add .
@@ -150,12 +148,12 @@ git commit -m "A description of what was added"
 git push -u origin master
 ```
 
-Here are some sugestions on where to start:
+Here are some suggestions on where to start:
 
 - Start by adding all the DOM functionality first.
 - Map out all of the needed fields/properties from each respective feed.
 - Start by doing a console.log of the incoming feeds to confirm you have a
-  successful transaction before you start mapping anything out.
+  successful ajax call before you start mapping anything out.
 - Make sure you have the [JSON View chrome extension](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
   to get a clean view of the JSON dump in your browser.
 - Think about ways to best standardize all of your incoming data.
@@ -203,7 +201,7 @@ numeric grade on a scale.
 Score | Expectations
 ----- | ------------
 **0** | _Does not meet expectations._
-**1** | _Meets expectactions, good job!_
+**1** | _Meets expectations, good job!_
 **2** | _Exceeds expectations, you wonderful creature, you!_
 
 This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
