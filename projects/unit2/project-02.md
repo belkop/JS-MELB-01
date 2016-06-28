@@ -130,6 +130,12 @@ __Additional UI interaction rules:__
 
 ---
 
+### Due Data_structures
+
+Submit (via a url in Scoology) and demonstrate a working app in lesson #16 - 11th July.
+
+---
+
 ### Getting Started
 
 Begin by creating a new repo on your github account.
