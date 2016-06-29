@@ -181,6 +181,7 @@ Here are some suggestions on where to start:
 - [A beginner's guide to HTTP and REST](http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340)
 - [Async JS Callbacks](http://sporto.github.io/blog/2012/12/09/callbacks-listeners-promises/)
 - [SitePoint: Intro to jQuery Shorthand AJAX Methods](http://www.sitepoint.com/introduction-jquery-shorthand-ajax-methods/)
+- [JSONp](http://www.ibm.com/developerworks/library/wa-aj-jsonp1/)
 
 ---
 
