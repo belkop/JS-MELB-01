@@ -27,7 +27,7 @@ information. The user from that point will be able to either dismiss the
 additional information or go to the referenced article.
 
 This will be our first single page app. All of our application views will be
-contained in the provided [index.html](../../projects/unit2/) file. Our task, after we pull from the
+contained in the provided [index.html](../projects/unit2/) file. Our task, after we pull from the
 respective feed APIs, will be to toggle the appropriate classes and content for
 the provided site architecture.
 
