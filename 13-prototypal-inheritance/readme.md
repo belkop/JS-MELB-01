@@ -339,10 +339,13 @@ class Car extends Vehicle() {
 <a name = "references"></a>
 ## references
 
-[A good article on prototypes](http://tobyho.com/2010/11/22/javascript-constructors-and/)
-[Using object.create](http://www.htmlgoodies.com/beyond/javascript/object.create-the-new-way-to-create-objects-in-javascript.html)
-[Difference between new and object.create](
-http://stackoverflow.com/questions/4166616/understanding-the-difference-between-object-create-and-new-somefunction)
+- [A good article on prototypes][1]
+- [Using object.create][2]
+- [Difference between new and object.create][3]
+
+[1]: http://tobyho.com/2010/11/22/javascript-constructors-and/
+[2]: http://www.htmlgoodies.com/beyond/javascript/object.create-the-new-way-to-create-objects-in-javascript.html
+[3]: http://stackoverflow.com/questions/4166616/understanding-the-difference-between-object-create-and-new-somefunction
 
 ---
 
