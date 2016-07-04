@@ -336,6 +336,13 @@ class Car extends Vehicle() {
 
 ---
 
+<a name = "references"></a>
+## references
+
+[A good article on prototypes](http://tobyho.com/2010/11/22/javascript-constructors-and/)
+
+---
+
 <a name = "conclusion"></a>
 ## Conclusion
 
