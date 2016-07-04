@@ -340,6 +340,9 @@ class Car extends Vehicle() {
 ## references
 
 [A good article on prototypes](http://tobyho.com/2010/11/22/javascript-constructors-and/)
+[Using object.create](http://www.htmlgoodies.com/beyond/javascript/object.create-the-new-way-to-create-objects-in-javascript.html)
+[Difference between new and object.create](
+http://stackoverflow.com/questions/4166616/understanding-the-difference-between-object-create-and-new-somefunction)
 
 ---
 
