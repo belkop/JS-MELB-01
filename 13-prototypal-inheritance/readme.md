@@ -337,7 +337,7 @@ class Car extends Vehicle() {
 ---
 
 <a name = "references"></a>
-## references
+## References
 
 - [A good article on prototypes][1]
 - [Using object.create][2]
