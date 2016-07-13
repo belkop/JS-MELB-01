@@ -341,7 +341,7 @@ Go ahead and take this knowledge to incorporate _update_ functionality within yo
 ```js
 function deleteMessage(id) {
   // find message whose objectId is equal to the id we're searching with
-  var messageReference = messageAppReference('messages/' + id)
+  var messageReference = messageAppReference.ref('messages/' + id)
 
   messageReference.remove();
 }
