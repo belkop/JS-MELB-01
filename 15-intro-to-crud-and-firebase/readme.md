@@ -163,6 +163,10 @@ Within the firebase console we need to turn on anonymous authentication:
 
 ![](img/firebase06.jpg)
 
+and then:
+
+![](img/firebase07.jpg)
+
 The app code is:
 
 ```js
