@@ -157,6 +157,26 @@ var config = {
 firebase.initializeApp(config);
 ```
 
+The other step we need to do is authenticate the user with Firebase. Firebase will not let the user of your app access the database contents unless they are authenticated in some way. Firebase provides a number of authentication mechanisms, but the easiest one is to use anonymous authentication. In order to do this we need a bit of configuration in Firebase, and a bit of code in out app.
+
+Within the firebase console we need to turn on anonymous authentication:
+
+![](img/firebase06.jpg)
+
+The app code is:
+
+```js
+firebase.auth().signInAnonymously().catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+
+  console.log(errorCode);
+});
+```
+
+Place this code just after the initializeApp call.
+
 Voila! That's it! You've created a Firebase account, created a Firebase database and connected with your database on the client-side of your application. Now let's move onto the juicier parts and start creating some data!
 
 ---
@@ -262,16 +282,15 @@ function getFanMessages() {
 
   // use reference to app database to listen for changes in messages data
   messageAppReference.ref('messages').on('value', function(results) {
+      // iterate through results coming from database call - ie messages
+      results.forEach(function (fbMessage) {
+          var msg = fbMessage.val().message;
+          var votes = fbMessage.val().votes;
 
-    // iterate through results coming from database call - ie messages
-    results.forEach(function (message) {
-      var message = message.val().message;
-      var votes = message.val().votes;
-
-      // load the results into the DOM
-
-    });
-  }
+          // load the results into the DOM
+          console.log(msg);
+      });
+  });
 }
 ```
 

@@ -1,3 +1,19 @@
+var config = {
+  apiKey: '<your-api-key>',
+  authDomain: '<your-auth-domain>',
+  databaseURL: '<your-database-url>',
+  storageBucket: '<your-storage-bucket>'
+};
+firebase.initializeApp(config);
+
+firebase.auth().signInAnonymously().catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+
+  console.log(errorCode);
+});
+
 // connect to your Firebase application using your reference URL
 var messageAppReference = new Firebase("https://js-dev-test.firebaseio.com/");
 
