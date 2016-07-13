@@ -59,6 +59,8 @@ When it comes to hosting a simple static site, such as a portfolio site, GitHub 
 
 The following steps will show you how to host a static site via GitHub Pages. After the demo, you will then go ahead and use these steps to host your very first site!
 
+There are some great simple instructions on githubs [pages site](https://pages.github.com), otherwise, follow the setps below.
+
 The first step is to create a new repository in [GitHub](https://github.com/)
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/0i070B2z0g281N1O121N/Image%202016-01-05%20at%207.59.14%20PM.png?v=f87cabf8)
